@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="
+    console.log(`Cart Quantity: ${cartQuantity}
+    `);
+    ">Show Quantity</button>
+  
+  <button onclick="
+    cartQuantity =cartQuantity + 1;
+    console.log(`Cart Quantity: ${cartQuantity}
+    `);
+  ">Add to cart</button>
+
+  <button onclick="
+    /*See below to write 'cartQuantity = cartQuantity +2;' in a different way */
+    cartQuantity += 2;
+    console.log(`Cart Quantity: ${cartQuantity}
+    `);
+  ">+2</button>
+
+  <button onclick="
+    cartQuantity = cartQuantity +3;
+    console.log(`Cart Quantity: ${cartQuantity}
+    `);
+  ">+3</button>
+
+  <button onclick="
+    cartQuantity = 0;
+    console.log('Cart was Reset');
+    console.log(`Cart Quantity: ${cartQuantity}
+    `);
+  ">Reset cart</button>
+
+  <script>
+    let cartQuantity = 0;
+  </script>
+</body>
+</html>
