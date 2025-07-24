@@ -7,7 +7,7 @@
 </head>
 <body>
   <script>
-    /*
+ /*   
     true
     false
     
@@ -32,7 +32,7 @@
     }
     else {
       console.log('you cannot drive')
-    } */
+    } 
   
     // logical operators
     //and operatior "&&" checks if left and right side is true
@@ -42,7 +42,30 @@
     console.log(0.2 >= 0 || 0.2 < 1/3)
     //not operator, flips value ie if its !true then its false
     console.log(!true)
+  */
+  // Truthy / falsy
+  const cartQuantity = 0;
+  // you dont have ot type "cartQuantity >0"
+  if (cartQuantity) {
+  console.log('cart has products')
+  }
+  else {
+    console.log('cart is empty')
+  }
 
+  //similar to an if else is by adding ? ie:
+  const resultOne = 1 ? 'truthy' : 'falsy' 
+  console.log (resultOne);
+  //vs
+  const value = 2;
+  let result;
+  if (value) {
+    result = 'truthy'
+  }
+  else {
+    result= 'falsy'
+  }  
+  console.log(result)
   </script>
 </body>
 </html>

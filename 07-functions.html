@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions</title>
+</head>
+<body>
+  <script>
+    function function1() {
+      console.log('hello');
+      console.log(2+2);
+    }
+
+    function1();
+    function1();
+
+    /* FUNCTIONS - store code so you can reuse it
+    // ie below - you cant keep console.log -ing the same "textCalcution". it will throw an error
+    function functionName (paramter){
+      return parameter;
+    }
+    
+    //to run the code you have to call the function
+    functionName();
+
+    
+    */
+    
+    let taxCalucaltion = .675;
+    console.log(taxCalucaltion * 100);
+    console.log(taxCalucaltion * 125);
+    console.log(textCalculation * 87); -- commented out bc it will error 
+
+    //instead
+    function taxCalFunction (billAmount) {
+      console.log(billAmount * .675)
+    }
+
+    taxCalFunction(100);
+    taxCalFunction(125);
+    taxCalFunction(87);
+
+    //another example
+
+    function dunkinOrder(donut, coffee, hashBrowns) {
+      console.log('Your total is:' + (donut + coffee + hashBrowns));
+    }
+    dunkinOrder(10, 5, 2);
+    dunkinOrder(21, 0, 2);
+
+    //using the RETURN
+
+    function windmillOrder (burger, milkshake) {
+      return burger + milkshake;
+    }
+
+    totalForOrder = windmillOrder(8, 5);
+    console.log('Your total is: ' + totalForOrder);
+
+  </script>
+</body>
+</html>
