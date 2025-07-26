@@ -30,7 +30,7 @@
     let taxCalucaltion = .675;
     console.log(taxCalucaltion * 100);
     console.log(taxCalucaltion * 125);
-    console.log(textCalculation * 87); -- commented out bc it will error 
+    //console.log(textCalculation * 87); -- commented out bc it will error 
 
     //instead
     function taxCalFunction (billAmount) {
@@ -57,6 +57,17 @@
 
     totalForOrder = windmillOrder(8, 5);
     console.log('Your total is: ' + totalForOrder);
+
+    console.log('------PARAMETERS-------');
+  
+    //PARAMTERS
+  function calcualteTax(cost, taxPercent = 0.5) { //the .5 is a default value so if you dont have have a taxPercent, it will pass this
+    console.log(taxPercent);
+    console.log(cost* taxPercent);
+  }
+
+  calcualteTax(2000, 0.2);
+  calcualteTax(5000); //no taxPercent, will use default value
 
   </script>
 </body>
