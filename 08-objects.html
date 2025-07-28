@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        //name and price would be the property/ies
+        const menu = {
+            food: 'hamburger',
+            price: 15,
+            ['delivery-time']: '1 day', //bracket notation lets us used properties that dont work with dot notation
+            steakOptions: { // nested object (objects, inside an object)
+                nyStrip: 30,
+                tomahawk: 55
+            },
+            fun: function function1 () { // 
+                console.log('function inside an object') //Methods: function inside an obect
+            }
+            
+        };
+        console.log(menu);
+        console.log(menu.food); //accessing 'name' property by dot notation
+        console.log(menu.steakOptions.nyStrip);
+        console.log(menu['delivery-time']); //bracket notation because code will think the '-' is a minus sign
+        menu.fun();
+
+        //JSON topic
+        console.log(JSON.stringify(menu));
+        const jsonString=(JSON.stringify(menu));
+        console.log(JSON.parse(jsonString))
+
+
+        //we can also use the property to change the value inside the object
+        menu.food ='sushi';
+        console.log(menu);
+
+        //adding another type of property
+        menu.extras = 'fries' ;
+        console.log(menu);
+
+        //deleting a property from the object
+        delete menu.extras;
+        console.log(menu);
+
+    </script>
+</body>
+</html>
