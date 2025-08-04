@@ -27,12 +27,6 @@
         console.log(menu['delivery-time']); //bracket notation because code will think the '-' is a minus sign
         menu.fun();
 
-        //JSON topic
-        console.log(JSON.stringify(menu));
-        const jsonString=(JSON.stringify(menu));
-        console.log(JSON.parse(jsonString))
-
-
         //we can also use the property to change the value inside the object
         menu.food ='sushi';
         console.log(menu);
@@ -44,6 +38,18 @@
         //deleting a property from the object
         delete menu.extras;
         console.log(menu);
+
+        //JSON topic ----- convert Javascript Object < to/ vice versa> JSON
+        //check out console to see the difference between the two
+        console.log('EXAMPLES FOR THIS TOPIC - JSON VS JS OBJECT ')
+        console.log(menu);
+        console.log('JSON STRINGIFY:')
+        console.log(JSON.stringify(menu)); //JS Object to JSON string
+        console.log('JSON PARSE - BACK TO JS OBJECTS:')
+        const jsonString = JSON.stringify(menu);
+        console.log(JSON.parse(jsonString)) //JSON String to JS Object
+
+
 
     </script>
 </body>
