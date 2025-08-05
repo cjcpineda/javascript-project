@@ -16,7 +16,7 @@
                 nyStrip: 30,
                 tomahawk: 55
             },
-            fun: function function1 () { // 
+            methodTest: function function1 () { // 
                 console.log('function inside an object') //Methods: function inside an obect
             }
             
@@ -25,7 +25,8 @@
         console.log(menu.food); //accessing 'name' property by dot notation
         console.log(menu.steakOptions.nyStrip);
         console.log(menu['delivery-time']); //bracket notation because code will think the '-' is a minus sign
-        menu.fun();
+        menu.methodTest();
+        menu.food;
 
         //we can also use the property to change the value inside the object
         menu.food ='sushi';
@@ -41,6 +42,7 @@
 
         //JSON topic ----- convert Javascript Object < to/ vice versa> JSON
         //check out console to see the difference between the two
+        //We use JSON to store data in this lesson
         console.log('EXAMPLES FOR THIS TOPIC - JSON VS JS OBJECT ')
         console.log(menu);
         console.log('JSON STRINGIFY:')
