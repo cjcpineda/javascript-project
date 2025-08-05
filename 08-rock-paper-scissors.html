@@ -25,8 +25,8 @@
   score.wins = 0;
   score.loses = 0;
   score.ties = 0;
-  localStorage.removeItem('score');
-"> Reset Score</button>
+  localStorage.removeItem('score'); 
+"> Reset Score</button> <!-- removeItem so we can reset aka not store score/ erase the score-->
 
 <!---- SHOW SCORE TALLY -->
 
@@ -62,9 +62,6 @@
     // ----"score" above is only a string since we converted it below in JSON.stringify
     //converting it from string back to an object:
     console.log(JSON.parse(localStorage.getItem('score')));
-
-
-
 
     function playGame(playerMove) {
       const computerMove = pickComputerMove();
